@@ -135,7 +135,7 @@ class HttpManager
         <main class="flex flex-col flex-1 p-7 dark:bg-gray-800">
             <div class="flex justify-between mb-4">
                 <h1 class="text-2xl font-semibold dark:text-white">📤 Mini Http Client (MHC)</h1>
-                <button id="darkModeToggle" class="bg-gray-200 dark:bg-gray-900 text-black dark:text-white px-4 py-2 rounded-md">Modo Oscuro</button>
+                <button id="darkModeToggle" class="bg-gray-200 dark:bg-gray-900 text-black dark:text-white px-4 py-2 rounded-md">🌚</button>
             </div>
             <form id="httpForm" method="POST" action="" class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md space-y-4">
                 <div class="flex space-x-4">
@@ -177,11 +177,11 @@ class HttpManager
         const updateDarkMode = (enabled) => {
             if (enabled) {
                 body.classList.add('dark');
-                toggleButton.textContent = 'Modo Claro';
+                toggleButton.textContent = '🌞';
                 localStorage.setItem('darkMode', 'enabled');
             } else {
                 body.classList.remove('dark');
-                toggleButton.textContent = 'Modo Oscuro';
+                toggleButton.textContent = '🌚';
                 localStorage.setItem('darkMode', 'disabled');
             }
         };
